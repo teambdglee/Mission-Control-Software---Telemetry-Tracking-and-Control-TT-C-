@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GLEE Mission Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'nasa-blue': '#0B3D91',
+              'nasa-red': '#FC3D21',
+              'control-panel': '#1a202c',
+              'dashboard-bg': '#0d1117',
+              'widget-bg': '#161b22',
+              'border-color': '#30363d',
+              'accent-cyan': '#22d3ee',
+              'accent-green': '#34d399',
+              'accent-yellow': '#fbbf24',
+              'accent-red': '#f87171',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Roboto Mono', 'monospace'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.540.0",
+    "recharts": "https://esm.sh/recharts@^3.1.2",
+    "@google/genai": "https://esm.sh/@google/genai@^1.15.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-dashboard-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

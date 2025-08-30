@@ -1,0 +1,5 @@
+{
+  "name": "Copy of GLEE Mission Control",
+  "description": "A mission control software dashboard for the GLEE (Ganymede Lander for Exploration and Examination) mission team in Bangladesh. It provides real-time data visualization, satellite control, and predictive analysis capabilities.",
+  "requestFramePermissions": []
+}
